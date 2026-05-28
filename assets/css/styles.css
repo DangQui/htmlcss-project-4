@@ -613,11 +613,25 @@ button {
 }
 
 .service-item__heading {
+    position: relative;
+    padding-left: 12px;
     color: #000958;
     font-family: Sora, sans-serif;
     font-size: 2.2rem;
     font-weight: 600;
     line-height: 1;
+}
+
+.service-item__heading::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    content: "";
+    width: 2px;
+    background: linear-gradient(#ff5b2e 0.39%, #ffa187 100.29%);
+    border-radius: 999px;
 }
 
 .service-item__desc {
