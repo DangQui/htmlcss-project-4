@@ -975,14 +975,21 @@ button {
 
 /* Review */
 .review {
-    padding: 53px 0;
+    padding: 104px 0 52px;
 }
 
 .review__inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     column-gap: 44px;
+}
+
+.review__content {
+    overflow: hidden;
+}
+
+.review-item__content {
+    margin-top: 28px;
 }
 
 .review__control {
@@ -998,6 +1005,10 @@ button {
     color: #ff5b2e;
 }
 
+.review__control:nth-of-type(2) {
+    margin-left: auto;
+}
+
 .review__control:hover {
     color: #fff;
     background: #ff5b2e;
@@ -1005,10 +1016,16 @@ button {
     border-color: #ff5b2e;
 }
 
+.review__list {
+    display: flex;
+}
+
 .review-item {
     display: flex;
     align-items: center;
     column-gap: 115px;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .review-item__media {
