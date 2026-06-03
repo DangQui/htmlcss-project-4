@@ -1283,7 +1283,7 @@ button {
     background: #fff;
 }
 
-.social-item {
+.social-item:hover {
     opacity: 0.9;
 }
 
